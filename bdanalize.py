@@ -18,6 +18,7 @@ except:
 
 # Comprobamos librerias de mongodb
 
+
 try:
     import pymongo
 except:
@@ -33,6 +34,7 @@ try:
     mydb = myclient["db_pagespeed"]
     mycol = mydb["dates"]
     mycol.drop()
+    
 except:
     print("No se ha podido conectar con la base de datos, revisa MongoDB shell.")
 
@@ -50,7 +52,9 @@ except:
 # Aquí empezaremos nuestro programa en la pagina inicial de PageSpeed Insights
 # Función con la cual analizamos la url e introducimos los diferentes url para analizarlos y sacar la información.
 
-def funcion_analizarURL(dominios):
+_id = 0
+
+def funcion_analizarURL(dominios, _id):
     for dominio in dominios:
         options = Options()
         options.headless = True
@@ -61,13 +65,14 @@ def funcion_analizarURL(dominios):
         elem.send_keys(dominio)
         elem.send_keys(Keys.RETURN)
         web = brower.current_url
-        funcion_sacarINF(web, brower)
+        _id = _id + 1
+        funcion_sacarINF(web, brower, _id)
         del elem
         del web
 
 # Función con la cual sacamos la iformación de las diferentes paginas.
 
-def funcion_sacarINF(web, brower):
+def funcion_sacarINF(web, brower, _id):
     brower.get(web)
 
     puntuaciones = brower.find_elements_by_class_name("lh-gauge__percentage")
@@ -134,14 +139,28 @@ def funcion_sacarINF(web, brower):
     print(oportunidades_ordenador)
     print(diagnosticos_ordenador)
 
+    funcion_MongoDB(_id, web, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador)
 
 
 
-#def funcion_MongoDB():
-#    mydates = {}
-#
+def funcion_MongoDB(_id, web, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb = myclient["db_pagespeed"]
+    mycol = mydb["dates"]   
+    mydates = {
+    "_id": _id,
+    "dominio": web,
+    "porcentaje_movil": porcentaje_movil, 
+    "orportunidades_movil": orportunidades_movil,
+    "diagnosticos_movil": diagnosticos_movil,
+    "porcentaje_ordenador": porcentaje_ordenador,
+    "oportunidades_ordenador": oportunidades_ordenador,
+    "diagnosticos_ordenador": diagnosticos_ordenador   
+    }
 
+    insertar = mycol.insert_one(mydates)
 
+    print(insertar)
 
-funcion_analizarURL(dominios)
+funcion_analizarURL(dominios, _id)
 
