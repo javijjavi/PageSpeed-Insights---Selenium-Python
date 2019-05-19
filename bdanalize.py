@@ -18,7 +18,6 @@ except:
 
 # Comprobamos librerias de mongodb
 
-
 try:
     import pymongo
 except:
@@ -28,13 +27,13 @@ except:
 #profile.set_preference("general.useragent.override", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:63.0) Gecko/20100101 Firefox/63.0")
 
 # Conexion con la base de datos Mongo DB y comprobar si esta la base de datos si no instalarla.
+# Eligiremos nuestra base de datos la columna y si esta se encuentra, eliminarla.
 
 try:
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
     mydb = myclient["db_pagespeed"]
     mycol = mydb["dates"]
     mycol.drop()
-    
 except:
     print("No se ha podido conectar con la base de datos, revisa MongoDB shell.")
 
@@ -66,13 +65,13 @@ def funcion_analizarURL(dominios, _id):
         elem.send_keys(Keys.RETURN)
         web = brower.current_url
         _id = _id + 1
-        funcion_sacarINF(web, brower, _id)
+        funcion_sacarINF(web, brower, _id, dominio)
         del elem
         del web
 
-# Función con la cual sacamos la iformación de las diferentes paginas.
+# Función con la cual sacamos la iformación de las diferentes paginas tanto de la app para movil como para la de ordenador.
 
-def funcion_sacarINF(web, brower, _id):
+def funcion_sacarINF(web, brower, _id, dominio):
     brower.get(web)
 
     puntuaciones = brower.find_elements_by_class_name("lh-gauge__percentage")
@@ -139,17 +138,17 @@ def funcion_sacarINF(web, brower, _id):
     print(oportunidades_ordenador)
     print(diagnosticos_ordenador)
 
-    funcion_MongoDB(_id, web, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador)
+    funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador)
 
+# En la funcion "funcion_MongoDB" recogeremos los datos anteriormente extraido y lo insertaremos en nuestra base de datos MongoDB.
 
-
-def funcion_MongoDB(_id, web, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
+def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
     mydb = myclient["db_pagespeed"]
     mycol = mydb["dates"]   
     mydates = {
     "_id": _id,
-    "dominio": web,
+    "dominio": dominio,
     "porcentaje_movil": porcentaje_movil, 
     "orportunidades_movil": orportunidades_movil,
     "diagnosticos_movil": diagnosticos_movil,
@@ -163,4 +162,3 @@ def funcion_MongoDB(_id, web, porcentaje_movil, orportunidades_movil, diagnostic
     print(insertar)
 
 funcion_analizarURL(dominios, _id)
-
