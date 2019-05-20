@@ -37,6 +37,13 @@ try:
 except:
     print("No se ha podido conectar con la base de datos, revisa MongoDB shell.")
 
+# Combrobamos librearia de psutil con el cual podremos observar cuanta memoria esta consumiendo nuestro proceso, por si tenemos que llegar a finalizarlo antes de que bloquee nuestro ordenador.
+
+try:
+    import psutil
+except:
+    print("Necesita descargar la libreria psutil")
+
 # Descargar los dominios de nuestro archivo dominios.txt donde debes introducir los dominios y los pasará a un array para su procesamiento.
 
 try:
@@ -139,6 +146,7 @@ def funcion_sacarINF(web, brower, _id, dominio):
     print(diagnosticos_ordenador)
 
     funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador)
+    funcion_memoryMagnement(brower)
 
 # En la funcion "funcion_MongoDB" recogeremos los datos anteriormente extraido y lo insertaremos en nuestra base de datos MongoDB.
 
@@ -160,5 +168,15 @@ def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagno
     insertar = mycol.insert_one(mydates)
 
     print(insertar)
+
+# En esta funcion avmos a comrpobar cuanta memoria esta consumiendo  nuestro proceso y asi poder controlarla.
+
+def funcion_memoryMagnement(brower):
+    memoria = psutil.virtual_memory()
+    controlador = 100 * 1024 * 100
+    if memoria.available <= controlador:
+        brower.close
+        exit()
+    
 
 funcion_analizarURL(dominios, _id)
