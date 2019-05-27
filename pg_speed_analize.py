@@ -152,12 +152,7 @@ def funcion_sacarINF(web, brower, _id, dominio):
     brower.close()      # IMPORTANTE!
                         # Cerramos el navegador, porque si no por cada dominio analizado nos abriria un navegador y imaginamos que analizamos 200 dominios, nuestro ordenador petaria porque serian mas de 200 nevegadores abiertos
                         # De esta manera por dominio analizado navegador cerrado entonces solo tendriamos un navegador como maximo abierto
-    print(porcentaje_movil)
-    print(orportunidades_movil)
-    print(diagnosticos_movil)
-    print(porcentaje_ordenador)
-    print(oportunidades_ordenador)
-    print(diagnosticos_ordenador)
+    
         # LLamanos a la funcion MongoDB y le pasamos las variables que hemos extraido
     funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador)
         # Llammos a la funcion memorimagnement esto nos servirá para analizar cuanta memoria estamos consumiendo y si estamos consumiendo mas de la cuenta nos cierra el programa
@@ -184,7 +179,6 @@ def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagno
 
     insertar = mycol.insert_one(mydates)        # Insertamos la el bson en la base de datos
 
-    print(insertar)     
 
 # En esta funcion avmos a comrpobar cuanta memoria esta consumiendo  nuestro proceso y asi poder controlarla.
 
