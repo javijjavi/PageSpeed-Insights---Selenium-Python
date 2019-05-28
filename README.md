@@ -13,8 +13,9 @@ El funcionamiento de la herramienta es muy simple, un usuario escribe en un arch
 Necesitaremos la version de python 3.7.3    
 - Este es el *[link de descarga.](https://www.python.org/downloads/)*         
 Dentro de python tendremos que tener instaladas las siguientes librerias.
-- Libreria de Selenium     
-  ``pip install selenium``
-- Libreria de MongoDB    
-  ``pip install pymongo``
-- Libreria de Psutil
+      - Libreria de Selenium     
+      ``pip install selenium``
+      - Libreria de MongoDB    
+      ``pip install pymongo``
+      - Libreria de Psutil
+      ``pip install psutil``
