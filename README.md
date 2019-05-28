@@ -1,6 +1,6 @@
 # PageSpeed-Insights---Selenium-Python
 
-En este proyecto vamos a realizar una herramienta en python v.3.6, la cual realizará automaticamente el analisis de diferentes URLs en page speed insight.   
+En este proyecto vamos a realizar una herramienta en python v.3.7.3, la cual realizará automaticamente el analisis de diferentes URLs en page speed insight.   
       
 ![Gif](source/pg_gif.gif)
 
@@ -11,7 +11,7 @@ El funcionamiento de la herramienta es muy simple, un usuario escribe en un arch
 
 ## Instalacion 
 Necesitaremos la version de python 3.7.3    
-- Este es el *[link de descarga.](https://www.python.org/downloads/)*
+- Este es el *[link de descarga.](https://www.python.org/downloads/)*         
 Dentro de python tendremos que tener instaladas las siguientes librerias.
 - Libreria de Selenium     
   ``pip install selenium``
