@@ -1,14 +1,7 @@
 <head>
 <h1>PAGE SPEED INSIGHTS</h1>
-{% load static %}
-
+{% for tut in tutorials %}
 </head>
 <body>
-
-{% for tut in tutorials %}
-    
-    <p>{{db_pagespeed.dates._id}}<p>
-
-
-
+<p>{{ tut.porcentaje_movil }}<p>
 </body>

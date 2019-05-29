@@ -1,5 +1,5 @@
-from djongo import models
 from django.db import models
+
 # Create your models here.
 class Tutorial(models.Model):
     _id = models.CharField(max_length=200, default="")
@@ -12,5 +12,5 @@ class Tutorial(models.Model):
     diagnosticos_ordenador = models.CharField(max_length=900, default="")
 
 
-    #def __str__(self):
-#        return self._id
+    def __str__(self):
+        return self._id

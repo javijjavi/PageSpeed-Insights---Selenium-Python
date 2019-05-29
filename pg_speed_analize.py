@@ -29,7 +29,7 @@ except:
 try:
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")        # Conectamos con nuestro cliente MongoDB
     mydb = myclient["db_pagespeed"]     # Seleccionamos nuestra base de datos
-    mycol = mydb["dates"]       # Seleccionamos nuestra columna dentro de nuestra base de datos
+    mycol = mydb["main_tutorial"]       # Seleccionamos nuestra columna dentro de nuestra base de datos
     mycol.drop()        # Si encontramos la columna la borramos
 except:
     print("No se ha podido conectar con la base de datos, revisa MongoDB shell.")
@@ -164,7 +164,7 @@ def funcion_sacarINF(web, brower, _id, dominio):
 def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")        # Conectamos con nuestra base de datos MongoDB
     mydb = myclient["db_pagespeed"]     # Seleccionamos nuestra base de datos db_pagespeed
-    mycol = mydb["dates"]           # Seleccionamos nuestra columna dates
+    mycol = mydb["main_tutorial"]           # Seleccionamos nuestra columna dates
     mydates = {     # Introdicimos en una variable llamada mydates un bson (utilizado en mongoDB) con las variables extraidas anteriormente y con los nombres de relacion con estas en la base de datos
     "_id": _id,     # La variable con nonmbre _id en la base de datos es la variable _id de nuestro programa
                     # Definimos las siguientes variables.
