@@ -68,7 +68,7 @@ _id = 0
 def funcion_analizarURL(dominios, _id):
     for dominio in dominios:        # Creamos un bucle para ir analizando dominio tras dominio de nuestro array anteriormente creado dominios.
         options = Options()     # Creamos la variable options, para poder modificar el webdriver.
-        options.headless = True     # Le decimos al web driver que active la opcion headless, con esta opcion el navegador (webdriver) no se nos abrirá tras ejecutar el programa, reduciendo asi el consumo de memoria.
+        #options.headless = True     # Le decimos al web driver que active la opcion headless, con esta opcion el navegador (webdriver) no se nos abrirá tras ejecutar el programa, reduciendo asi el consumo de memoria.
         brower = webdriver.Firefox(options=options, executable_path=r"C:\PROYECTOS\WebDriver\Firefox\geckodriver.exe")      # Le indicamos donde esta localizado el web driver en nuestro ordenador, en mi caso utilizo un Mozilla Firefox, pero podria haber utilizado otro cualquiera.
         website_URL ="https://developers.google.com/speed/pagespeed/insights/?hl=es"        # Le indico cual es la URL de la website que posteriormente introducire en el navegador.
         brower.get(website_URL)     # Aqui abro el navegador (con la opcion anterior headless activada se nos abrirá como un proceso en background) y le introduce la URL que anteriormente hemos definido.
