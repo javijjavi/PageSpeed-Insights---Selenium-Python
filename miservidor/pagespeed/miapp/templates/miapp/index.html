@@ -1,9 +1,6 @@
 <html>
 <body>
 <style>
-caption{
-    
-}
 table {width:100%;}
 table, th, td {
   border: 1px solid black;
@@ -24,6 +21,8 @@ table#t01 th {
   color: white;
 }
 </style>
+{% extends "index.html" %}
+{% block content %}
 <table id="t01">
 <caption>Dominio: {{ dominio }} </caption>
 <tr>
@@ -43,3 +42,4 @@ table#t01 th {
 <td>Diagnostico ordenador: {{ diagnosticos_ordenador }}</td>
 </tr>
 </table>
+{% endblock %}
