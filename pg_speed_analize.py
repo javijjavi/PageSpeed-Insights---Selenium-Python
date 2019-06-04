@@ -178,6 +178,7 @@ def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagno
     }
 
     insertar = mycol.insert_one(mydates)        # Insertamos la el bson en la base de datos
+    print("Final proceso " +str(_id))
 
 
 # En esta funcion avmos a comrpobar cuanta memoria esta consumiendo  nuestro proceso y asi poder controlarla.
