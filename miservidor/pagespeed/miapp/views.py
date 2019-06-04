@@ -37,7 +37,7 @@ def current_datetime(request):
 #    return render(request, 'miapp/index.html', {'context': context})
     
 def tabla_mongo(request):
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    myclient = pymongo.MongoClient("mongodb://192.168.10.170:55059")
     mydb = myclient["prueba2"]
     mycol = mydb["miapp_post"]
     dis_data = mycol.find()

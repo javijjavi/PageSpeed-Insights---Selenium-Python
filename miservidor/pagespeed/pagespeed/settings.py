@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'prueba2',
-        'HOST': 'mongodb://localhost:27017/',
+        'HOST': 'mongodb://192.168.10.170:55059',
     }
 }
 

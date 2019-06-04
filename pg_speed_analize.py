@@ -162,7 +162,7 @@ def funcion_sacarINF(web, brower, _id, dominio):
 # En la funcion "funcion_MongoDB" recogeremos los datos anteriormente extraido y lo insertaremos en nuestra base de datos MongoDB.
 
 def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")        # Conectamos con nuestra base de datos MongoDB
+    myclient = pymongo.MongoClient("mongodb://192.168.10.170:55059")        # Conectamos con nuestra base de datos MongoDB
     mydb = myclient["prueba2"]     # Seleccionamos nuestra base de datos db_pagespeed
     mycol = mydb["miapp_post"]           # Seleccionamos nuestra columna dates
     mydates = {     # Introdicimos en una variable llamada mydates un bson (utilizado en mongoDB) con las variables extraidas anteriormente y con los nombres de relacion con estas en la base de datos
