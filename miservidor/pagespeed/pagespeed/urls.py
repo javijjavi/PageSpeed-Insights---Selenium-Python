@@ -20,6 +20,6 @@ from miapp import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('pepe', views.current_datetime, name='current_datetime'),
-    path('', views.current_database, name='current_database')
+    #path('pepe', views.current_datetime, name='current_datetime'),
+    path('', views.tabla_mongo, name='tabla_mongo')
 ]

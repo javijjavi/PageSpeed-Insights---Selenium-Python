@@ -1,45 +1,39 @@
 <html>
-<body>
-<style>
-table {width:100%;}
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 15px;
-  text-align: left;
-}
-table#t01 tr:nth-child(even) {
-  background-color: #eee;
-}
-table#t01 tr:nth-child(odd) {
- background-color: #fff;
-}
-table#t01 th {
-  background-color: black;
-  color: white;
-}
-</style>
-{% extends "index.html" %}
-{% block content %}
-<table id="t01">
-<caption>Dominio: {{ dominio }} </caption>
-<tr>
-<th>Movil</th>
-<th>Ordenador</th>
-</tr>
-<tr>
-<td>Porcentaje movil: {{ porcentaje_movil }}</td>
-<td>Porcentaje ordenador: {{ porcentaje_ordenador }}</td>
-</tr>
-<tr>
-<td>Oportunidades movil: {{ orportunidades_movil }}</td>
-<td>Orportunidades ordenador: {{ oportunidades_ordenador }}</td>
-</tr>
-<tr>
-<td>Diagnostico movil: {{ diagnosticos_movil }}</td>
-<td>Diagnostico ordenador: {{ diagnosticos_ordenador }}</td>
-</tr>
-</table>
-{% endblock %}
+  <head>
+    <style>
+      table {
+        width:100%;
+        }
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      table#t01 tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      table#t01 tr:nth-child(odd) {
+      background-color: #fff;
+      }
+
+      table#t01 th {
+        background-color: black;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    {% load render_table from django_tables2 %}
+      <div>
+    {% render_table table %}
+      </div>
+  </body>
+</html>

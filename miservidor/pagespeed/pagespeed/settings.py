@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'djangotoolbox',
     'djongo',
     'miapp',
+    'django_tables2'
 ]
 
 MIDDLEWARE = [
