@@ -27,7 +27,7 @@ except:
 # Eligiremos nuestra base de datos la columna y si esta se encuentra, eliminarla.
 
 try:
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")        # Conectamos con nuestro cliente MongoDB
+    myclient = pymongo.MongoClient("mongodb://10.0.75.1:55059")        # Conectamos con nuestro cliente MongoDB
     mydb = myclient["prueba2"]     # Seleccionamos nuestra base de datos
     mycol = mydb["miapp_post"]       # Seleccionamos nuestra columna dentro de nuestra base de datos
     mycol.drop()        # Si encontramos la columna la borramos
@@ -68,7 +68,7 @@ _id = 0
 def funcion_analizarURL(dominios, _id):
     for dominio in dominios:        # Creamos un bucle para ir analizando dominio tras dominio de nuestro array anteriormente creado dominios.
         options = Options()     # Creamos la variable options, para poder modificar el webdriver.
-        #options.headless = True     # Le decimos al web driver que active la opcion headless, con esta opcion el navegador (webdriver) no se nos abrirá tras ejecutar el programa, reduciendo asi el consumo de memoria.
+        options.headless = True     # Le decimos al web driver que active la opcion headless, con esta opcion el navegador (webdriver) no se nos abrirá tras ejecutar el programa, reduciendo asi el consumo de memoria.
         brower = webdriver.Firefox(options=options, executable_path=r"C:\PROYECTOS\WebDriver\Firefox\geckodriver.exe")      # Le indicamos donde esta localizado el web driver en nuestro ordenador, en mi caso utilizo un Mozilla Firefox, pero podria haber utilizado otro cualquiera.
         website_URL ="https://developers.google.com/speed/pagespeed/insights/?hl=es"        # Le indico cual es la URL de la website que posteriormente introducire en el navegador.
         brower.get(website_URL)     # Aqui abro el navegador (con la opcion anterior headless activada se nos abrirá como un proceso en background) y le introduce la URL que anteriormente hemos definido.
@@ -162,7 +162,7 @@ def funcion_sacarINF(web, brower, _id, dominio):
 # En la funcion "funcion_MongoDB" recogeremos los datos anteriormente extraido y lo insertaremos en nuestra base de datos MongoDB.
 
 def funcion_MongoDB(_id, dominio, porcentaje_movil, orportunidades_movil, diagnosticos_movil, porcentaje_ordenador, oportunidades_ordenador, diagnosticos_ordenador):
-    myclient = pymongo.MongoClient("mongodb://192.168.10.170:55059")        # Conectamos con nuestra base de datos MongoDB
+    myclient = pymongo.MongoClient("mongodb://10.0.75.1:55059")        # Conectamos con nuestra base de datos MongoDB
     mydb = myclient["prueba2"]     # Seleccionamos nuestra base de datos db_pagespeed
     mycol = mydb["miapp_post"]           # Seleccionamos nuestra columna dates
     mydates = {     # Introdicimos en una variable llamada mydates un bson (utilizado en mongoDB) con las variables extraidas anteriormente y con los nombres de relacion con estas en la base de datos

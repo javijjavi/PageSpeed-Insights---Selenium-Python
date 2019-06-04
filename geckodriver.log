@@ -974,3 +974,275 @@ onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
  147
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1559652890294	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.tpIcBCrYAO2s"
+1559652931435	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.cGPZFi98jI63"
+1559652932765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559652932765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559652932765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559652932765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+[Parent 2652, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12300, Chr1559652938298	Marionette	INFO	Listening on port 57043
+1559652938629	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: services.settings: Initialize Remote Settings
+console.info: services.settings: Push notification received (version="1559618092506" phase=register)
+console.info: services.settings: Start polling for changes
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559618092506%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:205:13
+async*receivedBroadcastMessage@resource://services-settings/remote-settings.js:361:27
+receivedBroadcastMessage@resource://gre/modules/PushBroadcastService.jsm:208:23
+async*receivedBroadcastMessage@resource://gre/modules/PushService.jsm:741:26
+_handleBroadcastReply@resource://gre/modules/PushServiceWebSocket.jsm:775:27
+_wsOnMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:1066:18
+onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
+
+1559652959587	Marionette	INFO	Stopped listening on port 57043
+[Child 18300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 18300, Chrome_ChildThread] WARNING:[Parent 2652, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build[Parent 2652, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12672[GPU 16
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+916, Chrome_ChildThrea
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1559652972538	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.Xd6Scf8IOGDf"
+1559652973561	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559652973562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559652973562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559652973562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+[Child 6756, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 67561559652977790	Marionette	INFO	Listening on port 57112
+1559652978005	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: services.settings: Initialize Remote Settings
+console.info: services.settings: Push notification received (version="1559618092506" phase=register)
+console.info: services.settings: Start polling for changes
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559618092506%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:205:13
+async*receivedBroadcastMessage@resource://services-settings/remote-settings.js:361:27
+receivedBroadcastMessage@resource://gre/modules/PushBroadcastService.jsm:208:23
+async*receivedBroadcastMessage@resource://gre/modules/PushService.jsm:741:26
+_handleBroadcastReply@resource://gre/modules/PushServiceWebSocket.jsm:775:27
+_wsOnMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:1066:18
+onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
+
+1559652999627	Marionette	INFO	Stopped listening on port 57112
+[Parent 7780, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2080, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2080, Chrome_ChildT[Parent 7780, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7900, Chrome_ChildThr[Parent 7780, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3364, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559578667/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3364, Chrom[Parent 7780, Gecko_IOThread] WARNING: file z:/task_1559578667/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12548, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1559666932495	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.Kb2AUrnFhFWM"
+1559666936491	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559666936492	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559666936492	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559666936493	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(343,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(385,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(289,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(366,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(369,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+[Parent 2516, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc1559666947671	Marionette	INFO	Listening on port 50699
+1559666947990	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: services.settings: Initialize Remote Settings
+console.info: services.settings: Push notification received (version="1559660502221" phase=register)
+console.info: services.settings: Start polling for changes
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559660502221%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:205:13
+async*receivedBroadcastMessage@resource://services-settings/remote-settings.js:361:27
+receivedBroadcastMessage@resource://gre/modules/PushBroadcastService.jsm:208:23
+async*receivedBroadcastMessage@resource://gre/modules/PushService.jsm:741:26
+_handleBroadcastReply@resource://gre/modules/PushServiceWebSocket.jsm:775:27
+_wsOnMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:1066:18
+onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
+
+1559666972427	Marionette	INFO	Stopped listening on port 50699
+[Child 10996, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1[Parent 2516, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4072, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4072, Ch[Parent 2516, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4596, Ch[Parent 2516, Gecko_IOThread] WARNING: file z:/task_1559620814/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[GPU 11764, Chro
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+me_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1559668224767	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.TQdehAau1BoK"
+*** You are running in headless mode.
+1559668226000	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559668226000	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559668226000	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559668226000	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559668229087	Marionette	INFO	Listening on port 50994
+1559668229120	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559668248825	Marionette	INFO	Stopped listening on port 50994
+[Parent 1820, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10280, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10280, Chro[Parent 1820, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4900, Chrome_ChildTh[Parent 1820, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11436, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11436, Chrome[Parent 1820, Gecko_IOThread] WARNING: file z:/task_1559620814/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+1559668616709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.7kBhegptX70c"
+*** You are running in headless mode.
+1559668617744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559668617744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559668617744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559668617744	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559668620910	Marionette	INFO	Listening on port 51124
+1559668621090	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: services.settings: Initialize Remote Settings
+console.info: services.settings: Push notification received (version="1559660502221" phase=register)
+console.info: services.settings: Start polling for changes
+1559668640757	Marionette	INFO	Stopped listening on port 51124
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559660502221%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:205:13
+async*receivedBroadcastMessage@resource://services-settings/remote-settings.js:361:27
+receivedBroadcastMessage@resource://gre/modules/PushBroadcastService.jsm:208:23
+async*receivedBroadcastMessage@resource://gre/modules/PushService.jsm:741:26
+_handleBroadcastReply@resource://gre/modules/PushServiceWebSocket.jsm:775:27
+_wsOnMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:1066:18
+onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
+
+[Parent 3868, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 3868, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12224, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12224, Chrome_ChildTh[Parent 3868, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7520, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7520, Chrome_1559668652268	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Nightly\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.pM80SCllwJr8"
+*** You are running in headless mode.
+1559668653188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559668653188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559668653188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559668653189	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559668656047	Marionette	INFO	Listening on port 51185
+1559668656128	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.info: services.settings: Initialize Remote Settings
+console.info: services.settings: Push notification received (version="1559660502221" phase=register)
+console.info: services.settings: Start polling for changes
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559660502221%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:205:13
+async*receivedBroadcastMessage@resource://services-settings/remote-settings.js:361:27
+receivedBroadcastMessage@resource://gre/modules/PushBroadcastService.jsm:208:23
+async*receivedBroadcastMessage@resource://gre/modules/PushService.jsm:741:26
+_handleBroadcastReply@resource://gre/modules/PushServiceWebSocket.jsm:775:27
+_wsOnMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:1066:18
+onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
+
+1559668678875	Marionette	INFO	Stopped listening on port 51185
+[Parent 2524, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10904, Chrome_ChildThr[Parent 2524, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10856, Chrome_C[Parent 2524, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8904, Chrome_Ch[Parent 2524, Gecko_IOThread] WARNING: file z:/task_1559620814/build/src/ipc/chromium/src/base/process_util_win.cc, line 160

@@ -28,4 +28,8 @@ Dentro de django tendremos que instalar tambien algunas librerias, es recomendab
     ``pip install django_tables2``            
     ``djangotoolbox``
 
-Para la instalación de Docker solo tendremos q
+Para la instalación de Docker solo tendremos que descargar la imangen de mongo, luego montarla y ejecutarla estos son los comandos que tendremos que utilizar.                      
+``docker pull mongo``	            
+``docker images -a``                
+``docker run -d --name mongod -p 55059:27017 mongo``                    
+``docker exec -it mongod bash``                    
