@@ -31,5 +31,15 @@ Dentro de django tendremos que instalar tambien algunas librerias, es recomendab
 Para la instalación de Docker solo tendremos que descargar la imangen de mongo, luego montarla y ejecutarla estos son los comandos que tendremos que utilizar.                      
 ``docker pull mongo``	            
 ``docker images -a``                
-``docker run -d --name mongod -p 55059:27017 mongo``                    
+``docker run -d --name mongod -p 55059:27017 mongo``                            
 ``docker exec -it mongod bash``                    
+
+
+## Utilidad
+La utilidad de este micro servicio es porder analizar diferentes URLs en page speed insight sin tener que estar escribiendo las paginas una a una y la proyeccion de estas en un resumen para poder compararlas mas facilmente. Podremos analizar mas 170 URLs en una hora. 
+
+
+## Django
+Para procesar toda la información recogina por la base de datos hemos decidico realizar una pagina con el framework Django. Podriamos haber recogido la informacion en un txt o en un excel, pero gracias a Django hemos creado una pagina interactiva donde el usuario podrá ordenar los resultados para saber mas rapido que paginas necesitan una modificacion rapidamente.
+
+![Esquema](source/django.png)  
