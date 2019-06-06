@@ -1858,4 +1858,57 @@ onMessageAvailable@resource://gre/modules/PushServiceWebSocket.jsm:100:23
 [Child 188, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Child 188, Chrome_Child[Parent 13804, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Child 12316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559620814/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 12316, 
+[Child 12316, 1559732290108	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.cs4A4G6QE2Yw"
+*** You are running in headless mode.
+1559732296302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559732296302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559732296302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559732296302	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 334)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:334:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:327:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:351:16\nwrite@resource:///modules/sessionstore/SessionFile.jsm:390:24\nwrite@resource:///modules/sessionstore/SessionFile.jsm:63:32\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:354:24\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:292:17\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:338:10\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:189:14\ncallback@resource://gre/modules/Timer.jsm:100:7\n"
+1559732305813	Marionette	INFO	Listening on port 59427
+1559732305848	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559694968380%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1559732331805	Marionette	INFO	Stopped listening on port 59427
+[Parent 15732, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 15732, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9196, Ch[Parent 15732, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2696, C1559732345973	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.9gVP0q5KAeY1"
+*** You are running in headless mode.
+1559732347291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559732347291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559732347291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559732347291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559732350410	Marionette	INFO	Listening on port 59499
+1559732350485	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559732389842	Marionette	INFO	Stopped listening on port 59499
+[Parent 6916, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16832, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16832,[Parent 6916, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16072, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16072, Chrome_ChildThread[Parent 6916, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 996, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 996, Chrome_1559732400186	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\javig\\AppData\\Local\\Temp\\rust_mozprofile.8nlJAtAv5nba"
+*** You are running in headless mode.
+1559732402109	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559732402109	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1559732402110	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559732402110	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559732406494	Marionette	INFO	Listening on port 59602
+1559732406758	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559732426690	Marionette	INFO	Stopped listening on port 59602
+[Parent 5828, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11276, Chrome_ChildTh[Child 928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 928, Chrome_ChildThr[Parent 5828, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559580399/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1932, Chrome_Ch
